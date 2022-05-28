@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        text-indent: 1.5em;
+        border: 1px solid rgb(203, 201, 201);
+        width: 650px;
+        border-radius: 0px 10px 0px 10px;
+        padding: 5px;
+        
+    }
+    .tooltip span{
+        visibility: hidden;
+        position: sticky;        
+    } 
+    .tooltip:hover span{
+        visibility: visible;
+    }
+</style>
+<body>
+
+    <h1>Форматы файлов.</h1>
+
+    <div>
+        .Doc или .doc (от англ. <img src="doc.png"><a href="">document</a>) - расширение имени файла, используемое для файлов,<br>
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для <br>
+        щбозначения простых текстовых файлов без формирования, однако позже стало <br>
+        использоваться для двоичных форматов с разметкой.<br>
+        <a href="">Документ MS Word</a><img src="word.jpg">
+    </div>
+    <div>
+        Portable Document Format(<img src="doc.png"><a href="">PDF</a>) - межплатформенный формат электронных документов,<br>
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка<br>
+        Postscript.<br>
+        <a href="">Документ PDF</a><img src="pdf.png">
+    </div>
+    <div>
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате<br>
+        обычно имеет расширение <img src="doc.png"><a href="">zip</a> и хранит в сжатом или несжатом виде один или несколько<br>
+        файлов, которое можно из него извлечь путем распаковки с помощью специальной<br>
+        программы.<br>
+        <a href="">Архив</a><img src="zip.gif">
+    </div>
+
+    <h2>Это список файлов</h2>
+    
+    <p>
+        <img src="list.jpg"><a class="tooltip" href="">Документ MS Word <span><img src="word.jpg"></span></a><br>
+        <img src="list.jpg"><a class="tooltip" href="">Документ PDF <span><img src="pdf.png"></span></a><br>
+        <img src="list.jpg"><a class="tooltip" href="">Архив <span><img src="zip.gif"></span></a>
+    </p>
+</body>
+</html>
