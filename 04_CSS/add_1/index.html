@@ -14,13 +14,18 @@
         border-radius: 0px 10px 0px 10px;
         padding: 5px;
         
+    }    
+    a:hover[href$='1.doc']::after{
+        content: url(word.jpg);
     }
-    .tooltip span{
-        visibility: hidden;
-        position: sticky;        
-    } 
-    .tooltip:hover span{
-        visibility: visible;
+    a:hover[href$='2.doc']::after{
+        content: url(pdf.png);
+    }
+    a:hover[href$='3.doc']::after{
+        content: url(zip.gif);
+    }
+    a[href$='.doc']::before{
+        content: url(list.jpg);
     }
 </style>
 <body>
@@ -51,9 +56,9 @@
     <h2>Это список файлов</h2>
     
     <p>
-        <img src="list.jpg"><a class="tooltip" href="">Документ MS Word <span><img src="word.jpg"></span></a><br>
-        <img src="list.jpg"><a class="tooltip" href="">Документ PDF <span><img src="pdf.png"></span></a><br>
-        <img src="list.jpg"><a class="tooltip" href="">Архив <span><img src="zip.gif"></span></a>
+        <a href="1.doc">Документ MS Word</a><br>
+        <a href="2.doc">Документ PDF</a><br>
+        <a href="3.doc">Архив</a>
     </p>
 </body>
 </html>
